@@ -28,19 +28,6 @@ h6 {
   margin: 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0);
-  overflow: hidden;
-}
-
 .container {
   max-width: 1158px;
   margin: 0 auto;
@@ -50,11 +37,14 @@ h6 {
 /*--------------------HEADER------------------*/
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navigation {
   display: flex;
-  padding: 24px;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-logo {
@@ -136,7 +126,7 @@ h6 {
 .hero {
   background: #2e2f42;
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-size: 56px;
@@ -162,7 +152,9 @@ h6 {
   color: #fff;
   background: #4d5ae5;
   border-radius: 4px;
+  border: none;
   min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
   margin-right: auto;
   margin-left: auto;
@@ -177,7 +169,20 @@ h6 {
 
 /*-----------------FEATURES-------------------*/
 .features {
-  padding: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
 }
 
 .features-list {
@@ -213,12 +218,13 @@ h6 {
 
 .team {
   background: #f4f4fd;
-  padding: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
   font-size: 36px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 
   /* line-height: 40px; */
   line-height: 1.11;
@@ -242,7 +248,7 @@ h6 {
   font-weight: 500;
   font-size: 20px;
   padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 
   /* line-height: 24px; */
   line-height: 1.2;
@@ -279,12 +285,13 @@ h6 {
 /*---------------PORTFOLIO-------------------*/
 
 .portfolio {
-  padding: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
   font-size: 36px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 
   /* line-height: 40px; */
   line-height: 1.11;
@@ -298,10 +305,13 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  width: calc((100%-48px) / 3);
 }
 
 .portfolio-item {
   width: calc((100%-48px) / 3);
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
 }
 
 .portfolio-image {
@@ -313,7 +323,7 @@ h6 {
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   padding-left: 16px;
 
   /* line-height: 24px; */
@@ -348,10 +358,12 @@ h6 {
 
 .footer {
   background: #2e2f42;
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -361,6 +373,7 @@ h6 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 
 .footer-logo-span {
@@ -374,6 +387,5 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-top: 16px;
   max-width: 264px;
 }
