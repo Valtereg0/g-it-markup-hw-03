@@ -78,6 +78,8 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -254,7 +256,7 @@ h6 {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  padding: 0px 0px 32px 0px;
+  padding-bottom: 32px;
 }
 
 .team-subtitle {
@@ -278,7 +280,6 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  padding-bottom: 32px;
 }
 
 .team-image {
@@ -286,8 +287,6 @@ h6 {
   max-width: 100%;
   height: auto;
 }
-
-.
 
 /*-----------------TEAM-------------------*/
 
