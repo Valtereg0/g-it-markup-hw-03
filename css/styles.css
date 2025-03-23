@@ -112,6 +112,8 @@ h6 {
 .header-address-link:hover,
 .header-address-link:focus {
   color: #404bbf;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header .container {
@@ -182,7 +184,7 @@ h6 {
   border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -310,7 +312,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-item {
